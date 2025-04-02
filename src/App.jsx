@@ -3,6 +3,7 @@ import { MessageSquare, BarChart2, Bell } from "lucide-react";
 import './App.css'
 import { BarChart } from '@mui/x-charts/BarChart'
 import { LineChart } from '@mui/x-charts/LineChart'
+import ChatSystem from "./ChatSystem.jsx";
 
 export default function App() {
   return (
@@ -76,10 +77,6 @@ function DashboardContent() {
       </div>
     </div>
   );
-}
-
-function ChatSystem() {
-  return <div className="text-black text-xl">Chat System Interface (Coming Soon)</div>;
 }
 
 function Notifications() {

@@ -8,7 +8,7 @@ import Notifications from './Notifications.jsx'
 
 export default function App() {
   return (
-    <div>
+    <div className="w-full bg-white color-white">
       <Router>
         <Dashboard />
       </Router>
@@ -18,9 +18,9 @@ export default function App() {
 
 function Dashboard() {
   return (
-    <div className="flex h-screen bg-white">
+    <div className="flex h-screen bg-white w-full">
       {/* Sidebar */}
-      <div className="bg-white shadow-lg p-8 flex flex-col space-y-8 border-r border-gray-300 w-72">
+      <div className="bg-white shadow-lg p-8 flex flex-col space-y-8 border-r border-gray-300">
         <h1 className="text-l font-bold text-gray-900 m-6 text-center"> Project Planner </h1>
         <nav className="flex flex-col space-y-4">
           <NavItem to="/" icon={<BarChart2 />} label="Dashboard" />
@@ -30,7 +30,7 @@ function Dashboard() {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 p-8">
+      <div className="flex-1 p-8 w-full">
         <Routes>
           <Route path="/" element={<DashboardContent />} />
           <Route path="/chat" element={<ChatSystem />} />

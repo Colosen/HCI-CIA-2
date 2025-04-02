@@ -3,7 +3,8 @@ import { MessageSquare, BarChart2, Bell } from "lucide-react";
 import './App.css'
 import { BarChart } from '@mui/x-charts/BarChart'
 import { LineChart } from '@mui/x-charts/LineChart'
-import ChatSystem from "./ChatSystem.jsx";
+import ChatSystem from "./ChatSystem.jsx"
+import Notifications from './Notifications.jsx'
 
 export default function App() {
   return (
@@ -77,8 +78,4 @@ function DashboardContent() {
       </div>
     </div>
   );
-}
-
-function Notifications() {
-  return <div className="text-black text-xl">Notifications Dashboard (Coming Soon)</div>;
 }
